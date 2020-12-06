@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <title>메인 메뉴 만들기</title>
+    <meta charset="utf-8">
+   <style media="screen">
+  * { margin:0; }
+  ul, li { list-style:none; }
+  a { color:#fff; text-decoration:underline; }
+  a:hover { color:#000; text-decoration:none; }
+  #wrap{width:980px; height:auto; float:left;}
+  #main_menu{width:700px; height:50px; float:left; background:#92c121;}
+  #article{width:700px}
+  .gnb{padding:0}
+  .gnb a {width:135px; padding:0 5px 0 5px; display:block; text-decoration:none; }
+  .gnb li { position:relative; float:left; margin-right:11px; }
+  .gnb li a { height:50px;text-align:center; line-height:50px; font-size:1.05em;  color:#000; }
+  .gnb  li  a:hover { color:#09f; }
+  .gnb  li  ul { display:none; position:absolute; top:50px; left:0; }
+  .gnb  li:hover ul { display:block; }
+  .gnb li ul a {width:120px; height:35px; background-color:#000; color:#fff; text-align:center; line-height:37px; border-bottom:1px solid #fff; }
+  .gnb li ul a:hover { background-color:#555; }
+  </style>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <nav>
+
+       <div id="main_menu">
+         <ul class="gnb">
+           <li><a href="/index.php/1" title="동아리소개">동아리소개</a></li>
+           <li><a href="/index.php/2" title="사진기술">사진기술</a>
+             <ul>
+               <li><a href="https://rancommuyong.postype.com/series/601982/%EC%95%8C%EB%A0%8C-%EB%A0%88%EC%98%88%EC%8A%A4" title="촬영기술">촬영기술</a></li>
+               <li><a href="/index.php/3" title="편집기술">편집기술</a></li>
+             </ul>
+           </li>
+           <li><a href="/board/sub.php/list " title="우리들의 이야기">우리들의 이야기</a><ul>
+             <li><a href="/board/sub.php/list " title="자유게시판">자유게시판</a></li></ul>
+           </li>
+           <li><a href="/member/sub.php/login" title="회원출입문">회원출입문</a>
+             <ul>
+                <li><a href="/member/sub.php/login" title="로그인">로그인</a></li>
+                <li><a href="/member/sub.php/join" title="회원가입">회원가입</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+        <article >
+          <div id="article">
+            <h1>바디 내용 부분입니다.</h1>
+          </div>
+        </article>
+        <footer> 작성자 -홍길동</footer>
+
+      </div>
+    </body>
+    </html>
